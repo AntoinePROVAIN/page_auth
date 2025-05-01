@@ -193,3 +193,59 @@ Intégration d'outil tel que :
 - Status page                           => informer si soucis
 
 ![Fonctionnement image](C:\Users\antoi\OneDrive - yncréa\Documents\Antoine\Bazar\Projets\img\fonction.png "Schéma de fonctionnement").
+
+## Github commande
+
+Voici quelques conseils de fonctionnement avec les commandes pour éviter tout problemes.
+
+Créer 2 branches, une main (principale), et une developp (pour le développement).
+
+La branche main est vide par defaut, et nous codereons sur developp avant de push vers main.
+
+Dans le branche developp:
+
+- git checkout developp
+- git add .
+- git commit - m "message"
+- git push -u origin developp
+
+Dans la branche main:
+
+- git checkout main
+- git merge developp
+- git push -u origin main
+
+Les données ont bien été push dans les 2 branches.
+
+## Structure propre d'un projet react Typescript
+
+src/
+├── assets/            # Images, logos, polices, etc.
+│   └── images/
+├── components/        # Composants réutilisables
+│   ├── Button/
+│   │   ├── Button.tsx
+│   │   └── Button.module.css
+│   └── Navbar/
+├── features/          # Fonctionnalités ou modules métiers (domaines)
+│   └── user/
+│       ├── components/
+│       ├── api.ts     # appels API liés à user
+│       ├── userSlice.ts (si Redux)
+│       └── index.tsx
+├── pages/             # Pages (souvent liées au routing)
+│   ├── Home.tsx
+│   └── About.tsx
+├── routes/            # Configuration du routing (React Router par exemple)
+│   └── AppRoutes.tsx
+├── types/             # Types globaux TypeScript
+│   └── index.d.ts
+├── hooks/             # Hooks personnalisés
+│   └── useAuth.ts
+├── utils/             # Fonctions utilitaires ou helpers
+│   └── formatDate.ts
+├── context/           # React Contexts (AuthContext, ThemeContext, etc.)
+├── services/          # Appels API, configuration axios, etc.
+├── App.tsx
+└── main.tsx           # (ou index.tsx)
+
