@@ -219,7 +219,7 @@ Les données ont bien été push dans les 2 branches.
 
 ## Structure propre d'un projet react Typescript
 
-src/
+`src/
 ├── assets/            # Images, logos, polices, etc.
 │   └── images/
 ├── components/        # Composants réutilisables
@@ -247,5 +247,5 @@ src/
 ├── context/           # React Contexts (AuthContext, ThemeContext, etc.)
 ├── services/          # Appels API, configuration axios, etc.
 ├── App.tsx
-└── main.tsx           # (ou index.tsx)
+└── main.tsx           # (ou index.tsx)`
 
