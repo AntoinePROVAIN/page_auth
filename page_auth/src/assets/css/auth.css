@@ -1,0 +1,60 @@
+.authComponent_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+}
+
+.authComponent_container {
+    background-color: var(--couleur_auth_fond);
+    border: 1px solid var(--couleur_auth_bord);
+    height: 80vh;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.authComponent_content {
+    font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.auth_title {
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+}
+
+.auth_input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--couleur_form_fond);
+    color: var(--couleur_form_police);
+}
+
+.auth_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.auth_button {
+    width: 50%;
+    background-color: var(--couleur_auth_button);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+}
