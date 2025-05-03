@@ -6,6 +6,7 @@
   --couleur_form_fond: rgb(211, 211, 211, 1);
   --couleur_form_police: black;
   --couleur_auth_button: #4CAF50;
+  --couleur_auth_google: #4285f4;
   
   color-scheme: light dark;
   color: var(--couleur_light_ini);

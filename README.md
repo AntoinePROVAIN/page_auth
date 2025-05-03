@@ -251,4 +251,10 @@ src/
 └── main.tsx           # (ou index.tsx)
 ```
 
+## Deploiement sur Firebase pour gestion authentification et base de données
 
+Faire les modifs en local avec npm run dev et localhost. Ensuite pour envoyer et gerer le deployement, il faut faire : 
+
+- npm run build (qui dirirge vers dist)
+- firebase deploy
+- verifier avec l'url qu'ils donnent si les modifs sont bonnes

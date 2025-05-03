@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import '../assets/css/auth.css'
+import '../../assets/css/auth.css'
 
+import Login from './GoogleLogin';
 
 function AuthPage() {
     const nav = useNavigate();
@@ -15,6 +16,8 @@ function AuthPage() {
                 <div className="authComponent_container">
                     <div className='authComponent_content'>
                         <h2 className='auth_title'>Authentification</h2>
+                        <Login />
+                        <div className='or'>ou</div>
                         <form action="">
                             <input type='text' id="username" name='username' placeholder='Username' className='auth_input'></input>
                             <input type='password' id='pwd' name='pwd' placeholder='Password' className='auth_input'></input>
