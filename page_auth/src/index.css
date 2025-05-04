@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --couleur_light_ini : rgba(255, 255, 255, 0.87);
   --couleur_dark_ini : #213547;

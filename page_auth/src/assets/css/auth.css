@@ -8,8 +8,9 @@
 .authComponent_container {
     background-color: var(--couleur_auth_fond);
     border: 1px solid var(--couleur_auth_bord);
-    height: 80vh;
-    width: 50%;
+    height: auto; /* Supprimer la hauteur fixe */
+    width: 100%;  /* Utiliser 100% pour la largeur */
+    max-width: 600px; /* Utiliser une largeur maximale pour le container */
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -17,7 +18,7 @@
 
 .authComponent_content {
     font-size: 1.5em;
-    width: 80%;
+    width: 100%; /* Permet d'utiliser toute la largeur du container */
     margin: 0 auto;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .auth_button {
-    width: 50%;
+    width: 100%;  /* Remplacer par 100% pour la version mobile */
     background-color: var(--couleur_auth_button);
     color: white;
     padding: 14px 20px;
